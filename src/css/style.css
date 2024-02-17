@@ -13,3 +13,10 @@
 .inter {
     font-family: "Inter", sans-serif;
 }
+
+/* Upper Hero Section CSS */
+.upherosection {
+    background: linear-gradient(180deg, rgba(3, 7, 18, 0.50) 0%, rgba(3, 7, 18, 0.00) 100%), url(../images/banner.png), lightgray 50% / cover no-repeat;
+    background-size: cover;
+    border-radius: 2rem;
+}
