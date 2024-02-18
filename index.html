@@ -67,7 +67,7 @@
                     <p class="max-w-2xl mx-auto text-white inter text-lg font-normal leading-8 my-8">Yes, you can run
                         unit tests and view the results directly within the app. The integrated testing
                         features allow for a streamlined .</p>
-                    <button
+                    <button onclick="goToDiv()"
                         class="text-[#030712] text-center raleway text-xl font-bold inline-flex px-8 py-5 rounded-xl bg-[#1DD100]">Buy
                         Tickets</button>
                 </div>
@@ -179,7 +179,7 @@
                 </div>
             </div>
             <!-- Seat plan & checkout  -->
-            <div class="seatPlan_checkout flex flex-col lg:flex-row gap-6 bg-white p-6 rounded-3xl">
+            <div id="seat-plan-and-check-out" class="seatPlan_checkout flex flex-col lg:flex-row gap-6 bg-white p-6 rounded-3xl">
                 <!-- seat plan starts here -->
                 <div class="bookings flex-1">
                     <div class="selectSeats">
@@ -227,8 +227,7 @@
                             <!-- Left Seats Column Starts Here -->
                             <div class="busSeatMapLeftCol flex flex-1 gap-3">
                                 <div class="busSeatMapPosition">
-                                    <button
-                                        class="py-3 w-full my-2 invisible">
+                                    <button class="py-3 w-full my-2 invisible">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
                                             viewBox="0 0 32 32" fill="none">
                                             <path
@@ -236,26 +235,16 @@
                                                 stroke="#030712" stroke-opacity="0.7" stroke-width="2"
                                                 stroke-linecap="round" stroke-linejoin="round" />
                                         </svg></button>
-                                    <button
-                                        class="A py-3 w-full my-2">A</button>
-                                    <button
-                                        class="B py-3 w-full my-2">B</button>
-                                    <button
-                                        class="C py-3 w-full my-2">C</button>
-                                    <button
-                                        class="D py-3 w-full my-2">D</button>
-                                    <button
-                                        class="E py-3 w-full my-2">E</button>
-                                    <button
-                                        class="F py-3 w-full my-2">F</button>
-                                    <button
-                                        class="G py-3 w-full my-2">G</button>
-                                    <button
-                                        class="H py-3 w-full my-2">H</button>
-                                    <button
-                                        class="I py-3 w-full my-2">I</button>
-                                    <button
-                                        class="J py-3 w-full my-2">J</button>
+                                    <button class="A py-3 w-full my-2">A</button>
+                                    <button class="B py-3 w-full my-2">B</button>
+                                    <button class="C py-3 w-full my-2">C</button>
+                                    <button class="D py-3 w-full my-2">D</button>
+                                    <button class="E py-3 w-full my-2">E</button>
+                                    <button class="F py-3 w-full my-2">F</button>
+                                    <button class="G py-3 w-full my-2">G</button>
+                                    <button class="H py-3 w-full my-2">H</button>
+                                    <button class="I py-3 w-full my-2">I</button>
+                                    <button class="J py-3 w-full my-2">J</button>
                                 </div>
                                 <div class="bsmlcLeft flex-1">
                                     <button
@@ -290,7 +279,7 @@
                                 </div>
                                 <div class="bsmlcRight flex-1">
                                     <button
-                                        class ="bg-[#0307121A] rounded-xl px-10 py-3 w-full my-2 text-center invisible">
+                                        class="bg-[#0307121A] rounded-xl px-10 py-3 w-full my-2 text-center invisible">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
                                             viewBox="0 0 32 32" fill="none">
                                             <path
@@ -354,8 +343,7 @@
                                         class="J3 bg-[#0307121A] rounded-xl px-10 py-3 w-full my-2 text-center">J3</button>
                                 </div>
                                 <div class="bsmRcRight flex-1">
-                                    <button
-                                        class="bg-[#0307121A] rounded-xl px-10 py-3 w-full my-2 text-center">
+                                    <button class="bg-[#0307121A] rounded-xl px-10 py-3 w-full my-2 text-center">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
                                             viewBox="0 0 32 32" fill="none" class="mx-auto">
                                             <path
@@ -452,6 +440,7 @@
     <footer>
 
     </footer>
+    <script src="src/js/utility.js"></script>
 </body>
 
 </html>
