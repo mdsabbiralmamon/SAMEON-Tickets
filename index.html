@@ -398,38 +398,38 @@
                                     <th class="text-right">Price</th>
                                 </tr>
                             </thead>
-                            <tbody class="border-b-2 border-dashed">
-                                <tr>
+                            <tbody id="tableBodyContainer" class="border-b-2 border-dashed">
+                                <!-- <tr>
                                     <td>Null</td>
-                                    <td class="text-center">Null</td>
-                                    <td class="text-right">Null</td>
-                                </tr>
+                                    <td class="text-center">Economoy</td>
+                                    <td class="text-right">550</td>
+                                </tr> -->
                             </tbody>
                             <tfoot>
                                 <tr>
                                     <td colspan="2">Total Price</td>
-                                    <td class="text-right">BDT <span>Null</span></td>
+                                    <td class="text-right">BDT <span id="totalPrice">0</span></td>
                                 </tr>
                             </tfoot>
                         </table>
-                        <div class="coupon bg-white p-3 rounded-lg my-3 flex">
-                            <input class="w-full" type="text" placeholder="Have any coupon?">
-                            <button class="btn btn-success">Apply</button>
+                        <div id="couponContainer" class="coupon bg-white p-3 rounded-lg my-3 flex">
+                            <input id="couponCode" class="w-full" type="text" placeholder="Have any coupon?">
+                            <button onclick="checkCoupon()" id="disabledButton" class="btn btn-success" disabled>Apply</button>
                         </div>
                         <div class="totalWithCoupon flex justify-between">
                             <h2 class="text-[#030712] inter font-medium">Grand Total</h2>
-                            <p class="text-[#030712] inter font-medium">BDT <span>Null</span> </p>
+                            <p class="text-[#030712] inter font-medium">BDT <span id="grandTotalPrice">Null</span> </p>
                         </div>
                     </div>
                     <h2 class="text-[#030712] inter font-semibold">Passenger Name*</h2>
-                    <input class="rounded-xl border-2 w-full p-5 my-6" type="text" placeholder="Enter your name">
+                    <input id="yourName" class="rounded-xl border-2 w-full p-5 my-6" type="text" placeholder="Enter your name">
                     <h2 class="text-[#030712] inter font-semibold">Phone Number*</h2>
-                    <input class="rounded-xl border-2 w-full p-5 my-6" type="text"
+                    <input id="yourNumber" class="rounded-xl border-2 w-full p-5 my-6" type="number"
                         placeholder="Enter your phone number">
                     <h2 class="text-[#030712] inter font-semibold">Email ID</h2>
                     <input class="rounded-xl border-2 w-full p-5 my-6" type="text" placeholder="Enter your email id">
                     <button class="btn btn-success block w-full my-3"
-                        onclick="purchaseSuccess.showModal()">Next</button>
+                        onclick="completeOrder()">Next</button>
                     <div class="terms flex justify-center gap-6">
                         <h2>Terms and Conditions</h2>
                         <h2>Cancellation Policy</h2>
