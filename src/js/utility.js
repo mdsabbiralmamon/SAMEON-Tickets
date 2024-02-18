@@ -8,7 +8,7 @@ function goToDiv() {
 let clickCount = 0;
 document.getElementById('busSeatMapMain').addEventListener('click', function (event) {
     const selected = document.getElementById(event.target.id);
-    if (selected.classList.contains('bg-[#1DD100]')) {
+    if (selected.classList.contains('bg-[#1DD100]') && selected.classList.contains('rounded-xl')) {
         clickCount--;
         selected.classList.remove('bg-[#1DD100]');
         const findSelected = document.getElementsByTagName('td');
@@ -27,7 +27,7 @@ document.getElementById('busSeatMapMain').addEventListener('click', function (ev
         };
 
     }
-    else {
+    else if (selected.classList.contains('rounded-xl')){
         if (clickCount <= 3) {
             selected.classList.add('bg-[#1DD100]');
             const dynamicRowID = `rID-${selected.innerText}`;
