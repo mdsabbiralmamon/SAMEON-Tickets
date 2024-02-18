@@ -39,7 +39,7 @@ document.getElementById('busSeatMapMain').addEventListener('click', function (ev
             clickCount++;
         }
         else {
-            console.log('invalid');
+            alert('You can not buy more than 4 tickets');
         }
     }
     document.getElementById('selectedSeatsCount').innerText = clickCount;
