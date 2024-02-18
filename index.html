@@ -222,127 +222,175 @@
                     </div>
                     <!-- Bus Seat Map starts here -->
                     <div class="busSeatsMap">
-                        <div class="busSeatMapTop mt-6 flex justify-end">
-                            <button class="flex items-center text-center bg-[#0307121A] rounded-xl px-10 py-3">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"
-                                    fill="none">
-                                    <path
-                                        d="M16 28C14.4241 28 12.8637 27.6896 11.4078 27.0866C9.95189 26.4835 8.62902 25.5996 7.51472 24.4853C6.40042 23.371 5.5165 22.0481 4.91345 20.5922C4.31039 19.1363 4 17.5759 4 16C4 14.4241 4.31039 12.8637 4.91345 11.4078C5.5165 9.95189 6.40042 8.62902 7.51472 7.51472C8.62902 6.40042 9.95189 5.5165 11.4078 4.91345C12.8637 4.31039 14.4241 4 16 4C17.5759 4 19.1363 4.31039 20.5922 4.91345C22.0481 5.5165 23.371 6.40042 24.4853 7.51472C25.5996 8.62902 26.4835 9.95189 27.0866 11.4078C27.6896 12.8637 28 14.4241 28 16C28 17.5759 27.6896 19.1363 27.0866 20.5922C26.4835 22.0481 25.5996 23.371 24.4853 24.4853C23.371 25.5996 22.0481 26.4835 20.5922 27.0866C19.1363 27.6896 17.5759 28 16 28ZM16 28V18.6667M13.3333 16C13.3333 16.7072 13.6143 17.3855 14.1144 17.8856C14.6145 18.3857 15.2928 18.6667 16 18.6667M13.3333 16C13.3333 15.2928 13.6143 14.6145 14.1144 14.1144C14.6145 13.6143 15.2928 13.3333 16 13.3333C16.7072 13.3333 17.3855 13.6143 17.8856 14.1144C18.3857 14.6145 18.6667 15.2928 18.6667 16M13.3333 16L4.33333 13.3333M16 18.6667C16.7072 18.6667 17.3855 18.3857 17.8856 17.8856C18.3857 17.3855 18.6667 16.7072 18.6667 16M18.6667 16L27.6667 13.3333"
-                                        stroke="#030712" stroke-opacity="0.7" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                </svg>
-                            </button>
-                        </div>
                         <!-- Bus Main seats map starts here -->
-                        <div class="busSeatMapMain flex justify-between">
+                        <div class="busSeatMapMain flex gap-16">
                             <!-- Left Seats Column Starts Here -->
-                            <div class="busSeatMapLeftCol flex gap-3">
+                            <div class="busSeatMapLeftCol flex flex-1 gap-3">
                                 <div class="busSeatMapPosition">
-                                    <p class="flex items-center text-center py-3 my-2">A</p>
-                                    <p class="flex items-center text-center py-3 my-2">B</p>
-                                    <p class="flex items-center text-center py-3 my-2">C</p>
-                                    <p class="flex items-center text-center py-3 my-2">D</p>
-                                    <p class="flex items-center text-center py-3 my-2">E</p>
-                                    <p class="flex items-center text-center py-3 my-2">F</p>
-                                    <p class="flex items-center text-center py-3 my-2">G</p>
-                                    <p class="flex items-center text-center py-3 my-2">H</p>
-                                    <p class="flex items-center text-center py-3 my-2">I</p>
-                                    <p class="flex items-center text-center py-3 my-2">J</p>
+                                    <button
+                                        class="py-3 w-full my-2 invisible">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                            viewBox="0 0 32 32" fill="none">
+                                            <path
+                                                d="M16 28C14.4241 28 12.8637 27.6896 11.4078 27.0866C9.95189 26.4835 8.62902 25.5996 7.51472 24.4853C6.40042 23.371 5.5165 22.0481 4.91345 20.5922C4.31039 19.1363 4 17.5759 4 16C4 14.4241 4.31039 12.8637 4.91345 11.4078C5.5165 9.95189 6.40042 8.62902 7.51472 7.51472C8.62902 6.40042 9.95189 5.5165 11.4078 4.91345C12.8637 4.31039 14.4241 4 16 4C17.5759 4 19.1363 4.31039 20.5922 4.91345C22.0481 5.5165 23.371 6.40042 24.4853 7.51472C25.5996 8.62902 26.4835 9.95189 27.0866 11.4078C27.6896 12.8637 28 14.4241 28 16C28 17.5759 27.6896 19.1363 27.0866 20.5922C26.4835 22.0481 25.5996 23.371 24.4853 24.4853C23.371 25.5996 22.0481 26.4835 20.5922 27.0866C19.1363 27.6896 17.5759 28 16 28ZM16 28V18.6667M13.3333 16C13.3333 16.7072 13.6143 17.3855 14.1144 17.8856C14.6145 18.3857 15.2928 18.6667 16 18.6667M13.3333 16C13.3333 15.2928 13.6143 14.6145 14.1144 14.1144C14.6145 13.6143 15.2928 13.3333 16 13.3333C16.7072 13.3333 17.3855 13.6143 17.8856 14.1144C18.3857 14.6145 18.6667 15.2928 18.6667 16M13.3333 16L4.33333 13.3333M16 18.6667C16.7072 18.6667 17.3855 18.3857 17.8856 17.8856C18.3857 17.3855 18.6667 16.7072 18.6667 16M18.6667 16L27.6667 13.3333"
+                                                stroke="#030712" stroke-opacity="0.7" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg></button>
+                                    <button
+                                        class="A py-3 w-full my-2">A</button>
+                                    <button
+                                        class="B py-3 w-full my-2">B</button>
+                                    <button
+                                        class="C py-3 w-full my-2">C</button>
+                                    <button
+                                        class="D py-3 w-full my-2">D</button>
+                                    <button
+                                        class="E py-3 w-full my-2">E</button>
+                                    <button
+                                        class="F py-3 w-full my-2">F</button>
+                                    <button
+                                        class="G py-3 w-full my-2">G</button>
+                                    <button
+                                        class="H py-3 w-full my-2">H</button>
+                                    <button
+                                        class="I py-3 w-full my-2">I</button>
+                                    <button
+                                        class="J py-3 w-full my-2">J</button>
                                 </div>
-                                <div class="bsmlcLeft">
+                                <div class="bsmlcLeft flex-1">
                                     <button
-                                        class="A1 flex items-center text-center bg-[#0307121A] rounded-xl px-10 py-3 w-28 my-2">A1</button>
+                                        class="bg-[#0307121A] rounded-xl px-10 py-3 w-full my-2 text-center invisible">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                            viewBox="0 0 32 32" fill="none">
+                                            <path
+                                                d="M16 28C14.4241 28 12.8637 27.6896 11.4078 27.0866C9.95189 26.4835 8.62902 25.5996 7.51472 24.4853C6.40042 23.371 5.5165 22.0481 4.91345 20.5922C4.31039 19.1363 4 17.5759 4 16C4 14.4241 4.31039 12.8637 4.91345 11.4078C5.5165 9.95189 6.40042 8.62902 7.51472 7.51472C8.62902 6.40042 9.95189 5.5165 11.4078 4.91345C12.8637 4.31039 14.4241 4 16 4C17.5759 4 19.1363 4.31039 20.5922 4.91345C22.0481 5.5165 23.371 6.40042 24.4853 7.51472C25.5996 8.62902 26.4835 9.95189 27.0866 11.4078C27.6896 12.8637 28 14.4241 28 16C28 17.5759 27.6896 19.1363 27.0866 20.5922C26.4835 22.0481 25.5996 23.371 24.4853 24.4853C23.371 25.5996 22.0481 26.4835 20.5922 27.0866C19.1363 27.6896 17.5759 28 16 28ZM16 28V18.6667M13.3333 16C13.3333 16.7072 13.6143 17.3855 14.1144 17.8856C14.6145 18.3857 15.2928 18.6667 16 18.6667M13.3333 16C13.3333 15.2928 13.6143 14.6145 14.1144 14.1144C14.6145 13.6143 15.2928 13.3333 16 13.3333C16.7072 13.3333 17.3855 13.6143 17.8856 14.1144C18.3857 14.6145 18.6667 15.2928 18.6667 16M13.3333 16L4.33333 13.3333M16 18.6667C16.7072 18.6667 17.3855 18.3857 17.8856 17.8856C18.3857 17.3855 18.6667 16.7072 18.6667 16M18.6667 16L27.6667 13.3333"
+                                                stroke="#030712" stroke-opacity="0.7" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg></button>
                                     <button
-                                        class="B1 flex items-center text-center bg-[#0307121A] rounded-xl px-10 py-3 w-28 my-2">B1</button>
+                                        class="A1 bg-[#0307121A] rounded-xl px-10 py-3 w-full my-2 text-center">A1</button>
                                     <button
-                                        class="C1 flex items-center text-center bg-[#0307121A] rounded-xl px-10 py-3 w-28 my-2">C1</button>
+                                        class="B1 bg-[#0307121A] rounded-xl px-10 py-3 w-full my-2 text-center">B1</button>
                                     <button
-                                        class="D1 flex items-center text-center bg-[#0307121A] rounded-xl px-10 py-3 w-28 my-2">D1</button>
+                                        class="C1 bg-[#0307121A] rounded-xl px-10 py-3 w-full my-2 text-center">C1</button>
                                     <button
-                                        class="E1 flex items-center text-center bg-[#0307121A] rounded-xl px-10 py-3 w-28 my-2">E1</button>
+                                        class="D1 bg-[#0307121A] rounded-xl px-10 py-3 w-full my-2 text-center">D1</button>
                                     <button
-                                        class="F1 flex items-center text-center bg-[#0307121A] rounded-xl px-10 py-3 w-28 my-2">F1</button>
+                                        class="E1 bg-[#0307121A] rounded-xl px-10 py-3 w-full my-2 text-center">E1</button>
                                     <button
-                                        class="G1 flex items-center text-center bg-[#0307121A] rounded-xl px-10 py-3 w-28 my-2">G1</button>
+                                        class="F1 bg-[#0307121A] rounded-xl px-10 py-3 w-full my-2 text-center">F1</button>
                                     <button
-                                        class="H1 flex items-center text-center bg-[#0307121A] rounded-xl px-10 py-3 w-28 my-2">H1</button>
+                                        class="G1 bg-[#0307121A] rounded-xl px-10 py-3 w-full my-2 text-center">G1</button>
                                     <button
-                                        class="I1 flex items-center text-center bg-[#0307121A] rounded-xl px-10 py-3 w-28 my-2">I1</button>
+                                        class="H1 bg-[#0307121A] rounded-xl px-10 py-3 w-full my-2 text-center">H1</button>
                                     <button
-                                        class="J1 flex items-center text-center bg-[#0307121A] rounded-xl px-10 py-3 w-28 my-2">J1</button>
+                                        class="I1 bg-[#0307121A] rounded-xl px-10 py-3 w-full my-2 text-center">I1</button>
+                                    <button
+                                        class="J1 bg-[#0307121A] rounded-xl px-10 py-3 w-full my-2 text-center">J1</button>
                                 </div>
-                                <div class="bsmlcRight">
+                                <div class="bsmlcRight flex-1">
                                     <button
-                                        class="A2 flex items-center text-center bg-[#0307121A] rounded-xl px-10 py-3 w-28 my-2">A2</button>
+                                        class ="bg-[#0307121A] rounded-xl px-10 py-3 w-full my-2 text-center invisible">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                            viewBox="0 0 32 32" fill="none">
+                                            <path
+                                                d="M16 28C14.4241 28 12.8637 27.6896 11.4078 27.0866C9.95189 26.4835 8.62902 25.5996 7.51472 24.4853C6.40042 23.371 5.5165 22.0481 4.91345 20.5922C4.31039 19.1363 4 17.5759 4 16C4 14.4241 4.31039 12.8637 4.91345 11.4078C5.5165 9.95189 6.40042 8.62902 7.51472 7.51472C8.62902 6.40042 9.95189 5.5165 11.4078 4.91345C12.8637 4.31039 14.4241 4 16 4C17.5759 4 19.1363 4.31039 20.5922 4.91345C22.0481 5.5165 23.371 6.40042 24.4853 7.51472C25.5996 8.62902 26.4835 9.95189 27.0866 11.4078C27.6896 12.8637 28 14.4241 28 16C28 17.5759 27.6896 19.1363 27.0866 20.5922C26.4835 22.0481 25.5996 23.371 24.4853 24.4853C23.371 25.5996 22.0481 26.4835 20.5922 27.0866C19.1363 27.6896 17.5759 28 16 28ZM16 28V18.6667M13.3333 16C13.3333 16.7072 13.6143 17.3855 14.1144 17.8856C14.6145 18.3857 15.2928 18.6667 16 18.6667M13.3333 16C13.3333 15.2928 13.6143 14.6145 14.1144 14.1144C14.6145 13.6143 15.2928 13.3333 16 13.3333C16.7072 13.3333 17.3855 13.6143 17.8856 14.1144C18.3857 14.6145 18.6667 15.2928 18.6667 16M13.3333 16L4.33333 13.3333M16 18.6667C16.7072 18.6667 17.3855 18.3857 17.8856 17.8856C18.3857 17.3855 18.6667 16.7072 18.6667 16M18.6667 16L27.6667 13.3333"
+                                                stroke="#030712" stroke-opacity="0.7" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg></button>
                                     <button
-                                        class="B2 flex items-center text-center bg-[#0307121A] rounded-xl px-10 py-3 w-28 my-2">B2</button>
+                                        class="A2 bg-[#0307121A] rounded-xl px-10 py-3 w-full my-2 text-center">A2</button>
                                     <button
-                                        class="C2 flex items-center text-center bg-[#0307121A] rounded-xl px-10 py-3 w-28 my-2">C2</button>
+                                        class="B2 bg-[#0307121A] rounded-xl px-10 py-3 w-full my-2 text-center">B2</button>
                                     <button
-                                        class="D2 flex items-center text-center bg-[#0307121A] rounded-xl px-10 py-3 w-28 my-2">D2</button>
+                                        class="C2 bg-[#0307121A] rounded-xl px-10 py-3 w-full my-2 text-center">C2</button>
                                     <button
-                                        class="E2 flex items-center text-center bg-[#0307121A] rounded-xl px-10 py-3 w-28 my-2">E2</button>
+                                        class="D2 bg-[#0307121A] rounded-xl px-10 py-3 w-full my-2 text-center">D2</button>
                                     <button
-                                        class="F2 flex items-center text-center bg-[#0307121A] rounded-xl px-10 py-3 w-28 my-2">F2</button>
+                                        class="E2 bg-[#0307121A] rounded-xl px-10 py-3 w-full my-2 text-center">E2</button>
                                     <button
-                                        class="G2 flex items-center text-center bg-[#0307121A] rounded-xl px-10 py-3 w-28 my-2">G2</button>
+                                        class="F2 bg-[#0307121A] rounded-xl px-10 py-3 w-full my-2 text-center">F2</button>
                                     <button
-                                        class="H2 flex items-center text-center bg-[#0307121A] rounded-xl px-10 py-3 w-28 my-2">H2</button>
+                                        class="G2 bg-[#0307121A] rounded-xl px-10 py-3 w-full my-2 text-center">G2</button>
                                     <button
-                                        class="I2 flex items-center text-center bg-[#0307121A] rounded-xl px-10 py-3 w-28 my-2">I2</button>
+                                        class="H2 bg-[#0307121A] rounded-xl px-10 py-3 w-full my-2 text-center">H2</button>
                                     <button
-                                        class="J2 flex items-center text-center bg-[#0307121A] rounded-xl px-10 py-3 w-28 my-2">J2</button>
+                                        class="I2 bg-[#0307121A] rounded-xl px-10 py-3 w-full my-2 text-center">I2</button>
+                                    <button
+                                        class="J2 bg-[#0307121A] rounded-xl px-10 py-3 w-full my-2 text-center">J2</button>
                                 </div>
                             </div>
                             <!-- Right Seats Column Starts Here -->
-                            <div class="busSeatMapRightCol flex gap-3">
-                                <div class="bsmRcLeft">
+                            <div class="busSeatMapRightCol flex flex-1 gap-3">
+                                <div class="bsmRcLeft flex-1">
                                     <button
-                                        class="A3 flex items-center text-center bg-[#0307121A] rounded-xl px-10 py-3 w-28 my-2">A3</button>
+                                        class="bg-[#0307121A] rounded-xl px-10 py-3 w-full my-2 text-center invisible">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                            viewBox="0 0 32 32" fill="none">
+                                            <path
+                                                d="M16 28C14.4241 28 12.8637 27.6896 11.4078 27.0866C9.95189 26.4835 8.62902 25.5996 7.51472 24.4853C6.40042 23.371 5.5165 22.0481 4.91345 20.5922C4.31039 19.1363 4 17.5759 4 16C4 14.4241 4.31039 12.8637 4.91345 11.4078C5.5165 9.95189 6.40042 8.62902 7.51472 7.51472C8.62902 6.40042 9.95189 5.5165 11.4078 4.91345C12.8637 4.31039 14.4241 4 16 4C17.5759 4 19.1363 4.31039 20.5922 4.91345C22.0481 5.5165 23.371 6.40042 24.4853 7.51472C25.5996 8.62902 26.4835 9.95189 27.0866 11.4078C27.6896 12.8637 28 14.4241 28 16C28 17.5759 27.6896 19.1363 27.0866 20.5922C26.4835 22.0481 25.5996 23.371 24.4853 24.4853C23.371 25.5996 22.0481 26.4835 20.5922 27.0866C19.1363 27.6896 17.5759 28 16 28ZM16 28V18.6667M13.3333 16C13.3333 16.7072 13.6143 17.3855 14.1144 17.8856C14.6145 18.3857 15.2928 18.6667 16 18.6667M13.3333 16C13.3333 15.2928 13.6143 14.6145 14.1144 14.1144C14.6145 13.6143 15.2928 13.3333 16 13.3333C16.7072 13.3333 17.3855 13.6143 17.8856 14.1144C18.3857 14.6145 18.6667 15.2928 18.6667 16M13.3333 16L4.33333 13.3333M16 18.6667C16.7072 18.6667 17.3855 18.3857 17.8856 17.8856C18.3857 17.3855 18.6667 16.7072 18.6667 16M18.6667 16L27.6667 13.3333"
+                                                stroke="#030712" stroke-opacity="0.7" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg></button>
                                     <button
-                                        class="B3 flex items-center text-center bg-[#0307121A] rounded-xl px-10 py-3 w-28 my-2">B3</button>
+                                        class="A3 bg-[#0307121A] rounded-xl px-10 py-3 w-full my-2 text-center">A3</button>
                                     <button
-                                        class="C3 flex items-center text-center bg-[#0307121A] rounded-xl px-10 py-3 w-28 my-2">C3</button>
+                                        class="B3 bg-[#0307121A] rounded-xl px-10 py-3 w-full my-2 text-center">B3</button>
                                     <button
-                                        class="D3 flex items-center text-center bg-[#0307121A] rounded-xl px-10 py-3 w-28 my-2">D3</button>
+                                        class="C3 bg-[#0307121A] rounded-xl px-10 py-3 w-full my-2 text-center">C3</button>
                                     <button
-                                        class="E3 flex items-center text-center bg-[#0307121A] rounded-xl px-10 py-3 w-28 my-2">E3</button>
+                                        class="D3 bg-[#0307121A] rounded-xl px-10 py-3 w-full my-2 text-center">D3</button>
                                     <button
-                                        class="F3 flex items-center text-center bg-[#0307121A] rounded-xl px-10 py-3 w-28 my-2">F3</button>
+                                        class="E3 bg-[#0307121A] rounded-xl px-10 py-3 w-full my-2 text-center">E3</button>
                                     <button
-                                        class="G3 flex items-center text-center bg-[#0307121A] rounded-xl px-10 py-3 w-28 my-2">G3</button>
+                                        class="F3 bg-[#0307121A] rounded-xl px-10 py-3 w-full my-2 text-center">F3</button>
                                     <button
-                                        class="H3 flex items-center text-center bg-[#0307121A] rounded-xl px-10 py-3 w-28 my-2">H3</button>
+                                        class="G3 bg-[#0307121A] rounded-xl px-10 py-3 w-full my-2 text-center">G3</button>
                                     <button
-                                        class="I3 flex items-center text-center bg-[#0307121A] rounded-xl px-10 py-3 w-28 my-2">I3</button>
+                                        class="H3 bg-[#0307121A] rounded-xl px-10 py-3 w-full my-2 text-center">H3</button>
                                     <button
-                                        class="J3 flex items-center text-center bg-[#0307121A] rounded-xl px-10 py-3 w-28 my-2">J3</button>
+                                        class="I3 bg-[#0307121A] rounded-xl px-10 py-3 w-full my-2 text-center">I3</button>
+                                    <button
+                                        class="J3 bg-[#0307121A] rounded-xl px-10 py-3 w-full my-2 text-center">J3</button>
                                 </div>
-                                <div class="bsmRcRight">
+                                <div class="bsmRcRight flex-1">
                                     <button
-                                        class="A4 flex items-center text-center bg-[#0307121A] rounded-xl px-10 py-3 w-28 my-2">A4</button>
+                                        class="bg-[#0307121A] rounded-xl px-10 py-3 w-full my-2 text-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                            viewBox="0 0 32 32" fill="none" class="mx-auto">
+                                            <path
+                                                d="M16 28C14.4241 28 12.8637 27.6896 11.4078 27.0866C9.95189 26.4835 8.62902 25.5996 7.51472 24.4853C6.40042 23.371 5.5165 22.0481 4.91345 20.5922C4.31039 19.1363 4 17.5759 4 16C4 14.4241 4.31039 12.8637 4.91345 11.4078C5.5165 9.95189 6.40042 8.62902 7.51472 7.51472C8.62902 6.40042 9.95189 5.5165 11.4078 4.91345C12.8637 4.31039 14.4241 4 16 4C17.5759 4 19.1363 4.31039 20.5922 4.91345C22.0481 5.5165 23.371 6.40042 24.4853 7.51472C25.5996 8.62902 26.4835 9.95189 27.0866 11.4078C27.6896 12.8637 28 14.4241 28 16C28 17.5759 27.6896 19.1363 27.0866 20.5922C26.4835 22.0481 25.5996 23.371 24.4853 24.4853C23.371 25.5996 22.0481 26.4835 20.5922 27.0866C19.1363 27.6896 17.5759 28 16 28ZM16 28V18.6667M13.3333 16C13.3333 16.7072 13.6143 17.3855 14.1144 17.8856C14.6145 18.3857 15.2928 18.6667 16 18.6667M13.3333 16C13.3333 15.2928 13.6143 14.6145 14.1144 14.1144C14.6145 13.6143 15.2928 13.3333 16 13.3333C16.7072 13.3333 17.3855 13.6143 17.8856 14.1144C18.3857 14.6145 18.6667 15.2928 18.6667 16M13.3333 16L4.33333 13.3333M16 18.6667C16.7072 18.6667 17.3855 18.3857 17.8856 17.8856C18.3857 17.3855 18.6667 16.7072 18.6667 16M18.6667 16L27.6667 13.3333"
+                                                stroke="#030712" stroke-opacity="0.7" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg></button>
                                     <button
-                                        class="B4 flex items-center text-center bg-[#0307121A] rounded-xl px-10 py-3 w-28 my-2">B4</button>
+                                        class="A4 bg-[#0307121A] rounded-xl px-10 py-3 w-full my-2 text-center">A4</button>
                                     <button
-                                        class="C4 flex items-center text-center bg-[#0307121A] rounded-xl px-10 py-3 w-28 my-2">C4</button>
+                                        class="B4 bg-[#0307121A] rounded-xl px-10 py-3 w-full my-2 text-center">B4</button>
                                     <button
-                                        class="D4 flex items-center text-center bg-[#0307121A] rounded-xl px-10 py-3 w-28 my-2">D4</button>
+                                        class="C4 bg-[#0307121A] rounded-xl px-10 py-3 w-full my-2 text-center">C4</button>
                                     <button
-                                        class="E4 flex items-center text-center bg-[#0307121A] rounded-xl px-10 py-3 w-28 my-2">E4</button>
+                                        class="D4 bg-[#0307121A] rounded-xl px-10 py-3 w-full my-2 text-center">D4</button>
                                     <button
-                                        class="F4 flex items-center text-center bg-[#0307121A] rounded-xl px-10 py-3 w-28 my-2">F4</button>
+                                        class="E4 bg-[#0307121A] rounded-xl px-10 py-3 w-full my-2 text-center">E4</button>
                                     <button
-                                        class="G4 flex items-center text-center bg-[#0307121A] rounded-xl px-10 py-3 w-28 my-2">G4</button>
+                                        class="F4 bg-[#0307121A] rounded-xl px-10 py-3 w-full my-2 text-center">F4</button>
                                     <button
-                                        class="H4 flex items-center text-center bg-[#0307121A] rounded-xl px-10 py-3 w-28 my-2">H4</button>
+                                        class="G4 bg-[#0307121A] rounded-xl px-10 py-3 w-full my-2 text-center">G4</button>
                                     <button
-                                        class="I4 flex items-center text-center bg-[#0307121A] rounded-xl px-10 py-3 w-28 my-2">I4</button>
+                                        class="H4 bg-[#0307121A] rounded-xl px-10 py-3 w-full my-2 text-center">H4</button>
                                     <button
-                                        class="J4 flex items-center text-center bg-[#0307121A] rounded-xl px-10 py-3 w-28 my-2">J4</button>
+                                        class="I4 bg-[#0307121A] rounded-xl px-10 py-3 w-full my-2 text-center">I4</button>
+                                    <button
+                                        class="J4 bg-[#0307121A] rounded-xl px-10 py-3 w-full my-2 text-center">J4</button>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
+                <!-- vertical divider starts here -->
+                <div class="verticalDividerDesign">
+
                 </div>
                 <!-- Checkout booking sections starts here -->
                 <div class="checkout">
@@ -387,7 +435,8 @@
                     <h2 class="text-[#030712] inter font-semibold">Passenger Name*</h2>
                     <input class="rounded-xl border-2 w-full p-5 my-6" type="text" placeholder="Enter your name">
                     <h2 class="text-[#030712] inter font-semibold">Phone Number*</h2>
-                    <input class="rounded-xl border-2 w-full p-5 my-6" type="text" placeholder="Enter your phone number">
+                    <input class="rounded-xl border-2 w-full p-5 my-6" type="text"
+                        placeholder="Enter your phone number">
                     <h2 class="text-[#030712] inter font-semibold">Email ID</h2>
                     <input class="rounded-xl border-2 w-full p-5 my-6" type="text" placeholder="Enter your email id">
                     <button class="btn btn-success block w-full my-3">Next</button>

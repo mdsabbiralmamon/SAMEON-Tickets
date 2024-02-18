@@ -26,3 +26,7 @@
     border-top: 1px dashed #03071233;
     border-bottom: 0px;
 }
+
+.verticalDividerDesign{
+    border-right: 1px dashed #03071233;
+}
