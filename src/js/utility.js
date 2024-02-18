@@ -23,4 +23,7 @@ document.getElementById('busSeatMapMain').addEventListener('click',function(even
         }
     }
     console.log(clickCount);
+    document.getElementById('selectedSeatsCount').innerText = clickCount;
+    const remaining = 40 - clickCount;
+    document.getElementById('dynamicSeatCount').innerText = remaining;
 });
