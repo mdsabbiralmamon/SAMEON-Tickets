@@ -27,7 +27,7 @@ document.getElementById('busSeatMapMain').addEventListener('click', function (ev
         };
 
     }
-    else if (selected.classList.contains('rounded-xl')){
+    else if (selected.classList.contains('rounded-xl')) {
         if (clickCount <= 3) {
             selected.classList.add('bg-[#1DD100]');
             const dynamicRowID = `rID-${selected.innerText}`;
@@ -42,9 +42,12 @@ document.getElementById('busSeatMapMain').addEventListener('click', function (ev
             alert('You can not buy more than 4 tickets');
         }
     }
+    // Selected Seats
     document.getElementById('selectedSeatsCount').innerText = clickCount;
+    // Remaining Seats
     const remaining = 40 - clickCount;
     document.getElementById('dynamicSeatCount').innerText = remaining;
+    //Adjusting Pricing
     const totalPrice = clickCount * 550;
     document.getElementById('totalPrice').innerText = totalPrice;
     if (clickCount <= 3) {
@@ -53,13 +56,31 @@ document.getElementById('busSeatMapMain').addEventListener('click', function (ev
     else {
         document.getElementById('disabledButton').removeAttribute('disabled');
     }
-    if(document.getElementById('selectedSeatsCount').innerText < 4){
+    if (document.getElementById('selectedSeatsCount').innerText < 4) {
         document.getElementById('couponContainer').classList.remove('hidden');
-        document.getElementById('grandTotalPrice').innerText = parseInt(document.getElementById('selectedSeatsCount').innerText)*550;
+        document.getElementById('grandTotalPrice').innerText = parseInt(document.getElementById('selectedSeatsCount').innerText) * 550;
     }
-    else if(document.getElementById('selectedSeatsCount').innerText = 4){
-        document.getElementById('grandTotalPrice').innerText = 4*550;
+    else if (document.getElementById('selectedSeatsCount').innerText = 4) {
+        document.getElementById('grandTotalPrice').innerText = 4 * 550;
     }
+    // Next Button State Control
+    const inputName = document.getElementById('yourName');
+    const inputNumber = document.getElementById('yourNumber');
+    const orderStatButton = document.getElementById('orderStatButton');
+    const seatStatusCount = clickCount;
+
+    inputName.addEventListener('input', toggleButtonState);
+    inputNumber.addEventListener('input', toggleButtonState);
+
+    function toggleButtonState() {
+        if (inputName.value === '' || inputNumber.value === '' || seatStatusCount === 0) {
+            orderStatButton.setAttribute('disabled', 'disabled');
+        } else {
+            orderStatButton.removeAttribute('disabled');
+        }
+    }
+
+    toggleButtonState();
 });
 
 // Coupon Code
@@ -86,16 +107,16 @@ function checkCoupon() {
 }
 
 // Next Button
-function completeOrder(){
-    const inputName = document.getElementById('yourName').value;
-    const inputNumber = document.getElementById('yourNumber').value;
-    if(inputName === ''){
+const inputName = document.getElementById('yourName');
+const inputNumber = document.getElementById('yourNumber');
+function completeOrder() {
+    if (inputName === '') {
         alert('Name can not be empty');
     }
-    else if(inputNumber === ''){
+    else if (inputNumber === '') {
         alert('Number can not be empty');
     }
-    else{
+    else {
         purchaseSuccess.showModal();
     }
 }
